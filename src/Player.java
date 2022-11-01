@@ -7,6 +7,8 @@ public abstract class Player {
 	
 	public Player(String myName){
 		myScore = 0;
+		// Fixes computer name issue
+		this.myName = myName;
 	}
 	
 	// Each player must provide logic for deciding to roll again
@@ -21,7 +23,8 @@ public abstract class Player {
 	}
 	
 	public void resetScore(){
-		myScore = 0;
+		//myScore = 0;
+		this.myScore = 0;
 	}
 	
 	public void addToScore(int thisRound){

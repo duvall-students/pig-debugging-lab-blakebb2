@@ -5,5 +5,4 @@ public class Main {
 		Game pig = new Game();
 		pig.playGame();
 	}
-
 }
